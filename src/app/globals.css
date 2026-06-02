@@ -1,26 +1,164 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #050816;
+  --color-surface: #0B1120;
+  --color-card: #111827;
+  --color-primary: #3B82F6;
+  --color-secondary: #8B5CF6;
+  --color-accent: #22D3EE;
+  --color-primary-foreground: #F9FAFB;
+  --color-secondary-foreground: #9CA3AF;
+  --color-muted-foreground: #9CA3AF;
+  --color-border: oklch(0.928 0.006 264.531);
+  --color-overlay: #ffffff;
+  --color-overlay-inverse: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="light"] {
+  --color-background: #ffffff;
+  --color-surface: #f1f5f9;
+  --color-card: #ffffff;
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-accent: #0E7490;
+  --color-primary-foreground: #0F172A;
+  --color-secondary-foreground: #475569;
+  --color-muted-foreground: #64748B;
+  --color-overlay: #0F172A;
+  --color-overlay-inverse: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--color-border, oklch(0.928 0.006 264.531));
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-primary-foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient-text {
+  background-image: linear-gradient(to right, var(--color-blue-500), var(--color-purple-500), var(--color-cyan-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-flow 4s ease infinite;
+  padding-bottom: 0.125em;
+  display: inline-block;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-gradient {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(139, 92, 246, 0.1) 50%,
+    transparent 100%
+  );
+}
+
+[data-theme="light"] .hero-gradient {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(139, 92, 246, 0.1) 50%,
+    transparent 100%
+  );
+}
+
+[data-theme="light"] .bg-blue-500\/5 {
+  background-color: color-mix(in srgb, #3B82F6 18%, transparent);
+}
+
+[data-theme="light"] .bg-purple-500\/5 {
+  background-color: color-mix(in srgb, #8B5CF6 15%, transparent);
+}
+
+[data-theme="light"] .bg-blue-500\/10 {
+  background-color: color-mix(in srgb, #3B82F6 30%, transparent);
+}
+
+[data-theme="light"] .bg-purple-500\/10 {
+  background-color: color-mix(in srgb, #8B5CF6 25%, transparent);
+}
+
+[data-theme="light"] .from-blue-600\/20 {
+  --tw-gradient-from: color-mix(in srgb, #2563EB 40%, transparent);
+}
+
+[data-theme="light"] .to-purple-600\/20 {
+  --tw-gradient-to: color-mix(in srgb, #7C3AED 35%, transparent);
+}
+
+.glass-effect {
+  backdrop-filter: blur(24px);
+  background-color: color-mix(in srgb, var(--color-overlay) 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-overlay) 10%, transparent);
+}
+
+.glow-effect {
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.2);
+}
+
+.card-hover {
+  transition: all 0.5s;
+}
+.card-hover:hover {
+  scale: 1.05;
+  box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Pointer cursor on all clickable elements */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* Cursor styles */
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid color-mix(in srgb, var(--color-overlay) 35%, transparent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor-ring {
+    display: none;
+  }
 }

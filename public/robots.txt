@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glennrodrigues.com/sitemap.xml
