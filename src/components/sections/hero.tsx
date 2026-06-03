@@ -251,7 +251,7 @@ export function Hero() {
             >
               <Sparkles className="w-4 h-4 text-cyan-400" />
               <span className="text-sm text-cyan-400 font-medium">
-                Frontend Product Engineer
+                Frontend Engineer
               </span>
             </motion.div>
 
@@ -268,9 +268,9 @@ export function Hero() {
               variants={itemVariants}
               className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-xl"
             >
-              Building intelligent frontend systems for modern digital products.
-              Specializing in scalable SaaS platforms, AI interfaces, and immersive
-              web experiences.
+              I build frontends that solve real problems: fast, reliable, and
+              built to scale. React, Next.js, TypeScript are my toolkit. SaaS
+              platforms and AI interfaces are where I spend most of my time.
             </motion.p>
 
             <motion.div

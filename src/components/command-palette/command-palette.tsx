@@ -8,7 +8,7 @@ const commands = [
   {
     id: "projects",
     title: "View Projects",
-    description: "Browse featured projects and case studies",
+    description: "See what I&apos;ve built",
     shortcut: "1",
     action: () => {
       document.getElementById("projects-section")?.scrollIntoView({ behavior: "smooth" });
@@ -17,7 +17,7 @@ const commands = [
   {
     id: "contact",
     title: "Contact Me",
-    description: "Get in touch for collaborations",
+    description: "Send a message",
     shortcut: "2",
     action: () => {
       document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +26,7 @@ const commands = [
   {
     id: "experience",
     title: "Experience",
-    description: "View work history and timeline",
+    description: "Work history and timeline",
     shortcut: "3",
     action: () => {
       document.getElementById("experience-section")?.scrollIntoView({ behavior: "smooth" });
@@ -35,7 +35,7 @@ const commands = [
   {
     id: "tech-stack",
     title: "Tech Stack",
-    description: "Explore technical skills and tools",
+    description: "Tools and technologies",
     shortcut: "4",
     action: () => {
       document.getElementById("tech-stack-section")?.scrollIntoView({ behavior: "smooth" });
@@ -44,7 +44,7 @@ const commands = [
   {
     id: "github",
     title: "GitHub",
-    description: "View open source contributions",
+    description: "Open source work",
     shortcut: "G",
     action: () => {
       window.open("https://github.com/Glennrod10", "_blank");
@@ -53,7 +53,7 @@ const commands = [
   {
     id: "linkedin",
     title: "LinkedIn",
-    description: "Professional network profile",
+    description: "Connect on LinkedIn",
     shortcut: "L",
     action: () => {
       window.open("https://www.linkedin.com/in/glennrodrigues17/", "_blank");
@@ -62,7 +62,7 @@ const commands = [
   {
     id: "email",
     title: "Email",
-    description: "Send me a message",
+    description: "Write me a note",
     shortcut: "E",
     action: () => {
       window.open("mailto:glenn.dev17@gmail.com");
@@ -169,7 +169,7 @@ export function CommandPalette() {
           <div className="max-h-96 overflow-y-auto">
             {filteredCommands.length === 0 ? (
               <div className="p-8 text-center text-muted-foreground">
-                No results found
+                Nothing matches your search
               </div>
             ) : (
               filteredCommands.map((command, index) => (

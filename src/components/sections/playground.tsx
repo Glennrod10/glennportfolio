@@ -162,7 +162,7 @@ function StoryGame() {
     } else {
       setChoices([
         { text: "Continue forward", outcome: "You press on and the world shifts around you revealing new wonders." },
-        { text: "Look around carefully", outcome: "You notice intricate details you previously missed — clues hidden in plain sight." },
+        { text: "Look around carefully", outcome: "You notice intricate details you previously missed, clues hidden in plain sight." },
       ]);
     }
   };
@@ -345,7 +345,7 @@ function RPS() {
 function Magic8Ball() {
   const answers = [
     "It is certain.", "It is decidedly so.", "Without a doubt.",
-    "Yes — definitely.", "You may rely on it.", "As I see it, yes.",
+    "Yes, definitely.", "You may rely on it.", "As I see it, yes.",
     "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.",
     "Reply hazy, try again.", "Ask again later.", "Better not tell you now.",
     "Cannot predict now.", "Concentrate and ask again.",
@@ -458,7 +458,7 @@ export function PlaygroundSection() {
             Playground & <span className="gradient-text">Experiments</span>
           </h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Try out mini apps and interactive experiments
+            Mini apps, silly games, and experiments. All running right here in your browser.
           </p>
         </motion.div>
 
@@ -497,7 +497,7 @@ export function PlaygroundSection() {
               <div className="w-3 h-3 rounded-full bg-green-500" />
             </div>
             <span className="text-xs text-white/30 font-mono">
-              glenn@portfolio — {tabs[activeTab].terminal} — 80×24
+              glenn@portfolio: {tabs[activeTab].terminal}
             </span>
           </div>
 

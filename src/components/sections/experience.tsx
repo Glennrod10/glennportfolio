@@ -8,14 +8,14 @@ const experience = {
   company: "Agaetis Technologies",
   period: "2022 - Present",
   location: "Borivali West, Mumbai",
-  description: "Leading frontend development for AI-powered healthcare solutions",
+  description: "Working across a wide range of projects, from AI-powered medical chatbot apps and scalable SaaS platforms to e-commerce builds like House of Worktops. Constantly learning, experimenting with new technologies, and shipping real products that people actually use.",
   achievements: [
-    "Built scalable React components library used across 10+ products",
-    "Optimized application performance by 40% through code splitting and lazy loading",
-    "Implemented real-time collaboration features using WebSockets",
-    "Migrated legacy codebase to TypeScript, reducing runtime errors by 60%",
+    "Built a reusable React component library adopted across 10+ products",
+    "Reduced bundle size and improved load times with code splitting and lazy loading",
+    "Added real-time collaboration via WebSockets for multi-user workflows",
+    "Migrated a large Create React App project to Vite, cutting build times by 80%",
   ],
-  tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "WebSockets"],
+  tags: ["React", "TypeScript", "Next.js", "Python", "AI", "Tailwind CSS", "WebSockets"],
 };
 
 export function ExperienceSection() {
@@ -40,14 +40,14 @@ export function ExperienceSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6">
             <Briefcase className="w-4 h-4 text-cyan-400" />
             <span className="text-sm text-cyan-400 font-medium">
-              Professional Journey
+              Where I&apos;ve worked
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Career Timeline
+            Experience
           </h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Currently building AI-powered healthcare solutions at Agaetis Technologies
+            Building healthcare AI tools, e-commerce platforms, and more at Agaetis Technologies
           </p>
         </motion.div>
 

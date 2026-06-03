@@ -36,7 +36,7 @@ export function Footer() {
               <span className="text-sm font-bold gradient-text">GR</span>
             </div>
             <span className="text-sm text-muted-foreground hidden sm:block">
-              Building intelligent frontend systems
+              Frontend engineer crafting products that matter
             </span>
           </div>
 
@@ -81,7 +81,7 @@ export function Footer() {
             © {new Date().getFullYear()} Glenn Rodrigues
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-3 h-3 text-red-500" /> love Glenn
+            Built by Glenn Rodrigues
           </p>
         </motion.div>
       </div>

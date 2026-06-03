@@ -13,6 +13,7 @@ import {
   Layers,
   Cpu,
   Globe,
+  BookOpen,
 } from "lucide-react";
 
 const techCategories = [
@@ -29,12 +30,22 @@ const techCategories = [
   {
     title: "Backend & Database",
     icon: <Database className="w-5 h-5" />,
-    items: ["Python", "Supabase", "SQL"],
+    items: ["Python", "Supabase", "SQL", "PostgreSQL"],
   },
   {
     title: "Dev Tools & AI",
     icon: <Cpu className="w-5 h-5" />,
-    items: ["Git", "GitHub Actions", "Claude", "Codex", "Opencode", "OpenRouter", "Prompt Engineering"],
+    items: ["Git", "GitHub Actions", "Claude", "Codex", "Lovable", "Opencode", "OpenRouter", "Prompt Engineering"],
+  },
+  {
+    title: "Design",
+    icon: <Palette className="w-5 h-5" />,
+    items: ["Figma"],
+  },
+  {
+    title: "Currently Learning",
+    icon: <BookOpen className="w-5 h-5" />,
+    items: ["Flutter", "FastAPI", "Express", "Node.js"],
   },
 ];
 
@@ -65,13 +76,13 @@ export function TechStackSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6">
             <Layers className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-400 font-medium">Tech Stack</span>
+            <span className="text-sm text-cyan-400 font-medium">Stack</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Tools I <span className="gradient-text">Use</span>
+            Things I <span className="gradient-text">work with</span>
           </h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            The technologies I work with daily to build modern web experiences
+            A honest list of tools I&apos;ve used on real projects. Nothing fancy, just what gets the job done.
           </p>
         </motion.div>
 

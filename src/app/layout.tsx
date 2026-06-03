@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://glennrodrigues.com"),
-  title: "Glenn Rodrigues - Frontend Product Engineer",
-  description: "Building intelligent frontend systems for modern digital products. Specializing in React, Next.js, TypeScript, AI interfaces, and scalable SaaS platforms.",
+  title: "Glenn Rodrigues - Frontend Engineer",
+  description: "Frontend engineer specializing in React, Next.js, and TypeScript. I build SaaS platforms, AI interfaces, and web products that actually perform. Based in Mumbai, working remotely with clients worldwide.",
   keywords: ["frontend", "react", "nextjs", "typescript", "ai", "saas", "web development"],
   authors: [{ name: "Glenn Rodrigues" }],
   creator: "Glenn Rodrigues",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Glenn Rodrigues - Frontend Product Engineer",
-    description: "Building intelligent frontend systems for modern digital products",
+    title: "Glenn Rodrigues - Frontend Engineer",
+    description: "Frontend engineer specializing in React, Next.js, and TypeScript. I build products that actually perform.",
     type: "website",
     locale: "en_US",
     siteName: "Glenn Rodrigues Portfolio",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glenn Rodrigues - Frontend Product Engineer",
-    description: "Building intelligent frontend systems for modern digital products",
+    title: "Glenn Rodrigues - Frontend Engineer",
+    description: "Frontend engineer specializing in React, Next.js, and TypeScript. I build products that actually perform.",
     images: ["/twitter-image.png"],
   },
 };
@@ -56,7 +56,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Glenn Rodrigues",
-    jobTitle: "Frontend Product Engineer",
+    jobTitle: "Frontend Engineer",
     url: "https://glennrodrigues.com",
     sameAs: [
       "https://github.com/Glennrod10",

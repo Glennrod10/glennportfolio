@@ -5,26 +5,26 @@ import { ExternalLink, Code, Zap } from "lucide-react";
 
 const projects = [
   {
-    title: "Medly case",
-    description: "Immersive platform for medical professionals to practice AI-assisted diagnostics with interactive simulations and real-time feedback.",
-    tags: ["React", "Next.js", "TypeScript", "Python", ],
+    title: "Medly Case",
+    description: "An AI-powered exam and practice platform for medical professionals. Multiple exam modes, rankings, chat-based reports, pause and resume sessions, checklists, and a library of cases to explore.",
+    tags: ["React", "Next.js", "TypeScript", "Python", "AI"],
     challenges: [
-      "Real-time 3D visualization of medical data",
-      "AI model inference directly in browser",
-      "Intuitive gesture controls for surgeons",
+      "Building multiple exam modes with pause and resume across sessions",
+      "AI-powered chat reports with rankings and performance insights",
+      "Case library with checklists and progress tracking for each user",
     ],
     metrics: { performance: "+40%", users: "100", rating: "4.5" },
     link: null,
     github: null,
   },
   {
-    title: "CLC Abroad — WordPress Site",
-    description: "Full abroad agency website built with WordPress & Elementor. Dynamic training pages, course filtering, blog system, and multi-page architecture.",
+    title: "CLC Abroad",
+    description: "Study abroad agency website built on WordPress with Elementor. Custom training pages, course filtering, blog, and a full multi-page structure.",
     tags: ["WordPress", "Elementor", "PHP", "Custom Post Types", "ACF"],
     challenges: [
-      "Dynamic training course pages with custom post types",
-      "Advanced filtering and search for study programs",
-      "Scalable blog and content management system",
+      "Built dynamic training course pages with custom post types",
+      "Implemented advanced filtering and search for study programs",
+      "Set up a scalable blog and content management system",
     ],
     metrics: { pages: "50+", courses: "200+", traffic: "+120%" },
     link: "https://clcabroad.in/",
@@ -32,25 +32,25 @@ const projects = [
   },
   {
     title: "Study Abroad SaaS Platform",
-    description: "Platform connecting students with universities worldwide — course matching, application tracking, and visa guidance all in one place.",
-    tags: ["Next.js", "Supabase", "Stripe", "Node.js", "PostgreSQL"],
+    description: "Still in active development. A platform connecting students with universities globally, with course matching, application tracking, and a multi-step onboarding flow.",
+    tags: ["Next.js", "Supabase", "Node.js", "PostgreSQL"],
     challenges: [
-      "Real-time application status tracking",
-      "Multi-step form with 50+ university API integrations",
-      "Secure payment and document handling",
+      "Building a multi-step application flow with dynamic university matching",
+      "Real-time status tracking and document management per application",
+      "Designing a scalable architecture to support multiple university integrations",
     ],
-    metrics: { applications: "50+", universities: "100+", success: "85%" },
+    metrics: { universities: "50+", features: "10+", phase: "Alpha" },
     link: null,
     github: null,
   },
   {
     title: "House of Worktops",
-    description: "Custom OpenCart e-commerce platform with a product configurator for bespoke kitchen worktops, built with Bootstrap and Twig templating.",
+    description: "OpenCart e-commerce store with a custom worktop builder, side-by-side quotation comparison, revamped products page, and an updated cart experience. Bootstrap frontend with Twig templating.",
     tags: ["OpenCart", "PHP", "Bootstrap", "Twig", "MySQL", "JavaScript"],
     challenges: [
-      "Build custom worktop builder feature on the frontend side",
-      "Responsive Bootstrap frontend with Twig templating",
-      "Complex pricing logic for custom dimensions and materials",
+      "Built a custom worktop builder for bespoke dimensions and finishes",
+      "Developed a comparison quotation tool across frontend and backend",
+      "Redesigned the products page and updated the cart workflow",
     ],
     metrics: { products: "200+", orders: "+40%", satisfaction: "95%" },
     link: null,
@@ -58,12 +58,12 @@ const projects = [
   },
   {
     title: "Maanch Engagement Tracker",
-    description: "Fund management platform for handling portfolios, tracking issues, interactions, votes, and generating detailed reports for enterprise clients.",
+    description: "Enterprise fund management platform: portfolio tracking, issue management, voting, surveys, and automated reporting for investment teams.",
     tags: ["React", "Laravel", "Bootstrap", "PHP", "MySQL", "JavaScript"],
     challenges: [
-      "Complex fund portfolio management and tracking system",
-      "Real-time issue and interaction tracking across large teams",
-      "Custom reporting engine with voting and survey analytics",
+      "Designed a fund portfolio management system with real-time tracking",
+      "Built issue and interaction tracking for large cross-functional teams",
+      "Developed a custom reporting engine with voting and survey analytics",
     ],
     metrics: { funds: "50+", interactions: "10K+", clients: "20+" },
     link: null,
@@ -91,17 +91,17 @@ export function ProjectsSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6">
             <Code className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-400 font-medium">Featured Work</span>
+            <span className="text-sm text-cyan-400 font-medium">Projects</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Building exceptional digital experiences that solve real-world problems
+            A few things I&apos;ve built. Some shipped, some still evolving.
           </p>
         </motion.div>
 
-        {/* Projects Grid — side by side */}
+        {/* Projects Grid side by side */}
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <motion.div

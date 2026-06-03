@@ -14,25 +14,25 @@ const processSteps = [
     step: "01",
     title: "Plan & Structure",
     icon: <BrainCircuit className="w-5 h-5" />,
-    description: "I review designs, plan the component architecture, map out data flow, and define API contracts — all before writing a single line of code.",
+    description: "I start by reviewing designs and planning the architecture: component tree, data flow, API contracts. No code until the blueprint is solid.",
   },
   {
     step: "02",
     title: "Develop & Integrate",
     icon: <MessageSquareCode className="w-5 h-5" />,
-    description: "I build reusable components, wire up APIs, manage state, and leverage AI tools throughout to speed up development and catch issues early.",
+    description: "Then I build. Reusable components, API integration, state management. I use AI tools where they help, but every line gets reviewed and understood.",
   },
   {
     step: "03",
     title: "Test & Optimize",
     icon: <RefreshCcw className="w-5 h-5" />,
-    description: "I test across browsers and devices, optimize Core Web Vitals, bundle size, and images, then squash edge cases until everything feels solid.",
+    description: "Testing across browsers and devices. I optimize for performance: Core Web Vitals, bundle size, and images. Then I chase down edge cases until the experience is consistent.",
   },
   {
     step: "04",
     title: "Review & Deploy",
     icon: <Zap className="w-5 h-5" />,
-    description: "I push through staging, run QA checks, gather feedback, then ship to production with automated CI/CD — clean, tested, and ready to scale.",
+    description: "Staging deployment, QA checks, feedback, then production with automated CI/CD. Clean, tested, and ready to handle traffic.",
   },
 ];
 
@@ -54,13 +54,13 @@ export function ProcessSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6">
             <Workflow className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-400 font-medium">Methodology</span>
+            <span className="text-sm text-cyan-400 font-medium">How I build things</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
-            How I <span className="gradient-text">Work</span>
+            How I <span className="gradient-text">work</span>
           </h2>
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A practical workflow refined over years of shipping React and Next.js apps
+            I&apos;ve been doing this long enough to know what works. Here&apos;s how I approach every project.
           </p>
         </motion.div>
 

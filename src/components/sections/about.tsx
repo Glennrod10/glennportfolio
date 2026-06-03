@@ -8,7 +8,7 @@ export function AboutSection() {
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "Frontend Architecture",
-      description: "React, Next.js, TypeScript — the good stuff. I build systems that scale without breaking a sweat.",
+      description: "React, Next.js, TypeScript. The good stuff. I build systems that scale without breaking a sweat.",
       color: "from-blue-600 to-cyan-400",
     },
     {
@@ -20,7 +20,7 @@ export function AboutSection() {
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Performance Optimization",
-      description: "Fast load times, smooth interactions, no bloat. Your users won't notice — and that's the point.",
+      description: "Fast load times, smooth interactions, no bloat. Your users won't notice. And that's the point.",
       color: "from-yellow-500 to-orange-400",
     },
     {
@@ -61,19 +61,15 @@ export function AboutSection() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Product-focused engineer
-              <span className="gradient-text block mt-2">building the future</span>
+              Engineer &amp; product thinker.
+              <span className="gradient-text block mt-2">One line at a time.</span>
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              I build frontend systems that don&apos;t just look good — they actually work.
-              From AI-powered interfaces to SaaS platforms that handle millions of requests,
-              I focus on making complex things feel simple.
-            </p>
-
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              What drives me? Solving real problems. Good code is just the starting point —
-              what matters is how it feels when someone uses what you&apos;ve built.
+              I build frontends that actually work. Not just pretty screens, systems
+              that handle real traffic, real data, and real complexity without falling
+              apart. From SaaS platforms serving thousands of users to AI interfaces
+              that need to feel effortless, I focus on making the complex feel simple.
             </p>
 
             <div className="flex flex-wrap gap-3">

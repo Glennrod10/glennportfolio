@@ -65,7 +65,7 @@ export function ContactSection() {
       icon: <Mail className="w-5 h-5" />,
       name: "Email",
       link: "mailto:glenn.dev17@gmail.com",
-      description: "Shoot me a message"
+      description: "Send me an email"
     },
     {
       icon: (
@@ -75,7 +75,7 @@ export function ContactSection() {
       ),
       name: "GitHub",
       link: "https://github.com/Glennrod10",
-      description: "Check my repos"
+      description: "Browse my repos"
     },
     {
       icon: (
@@ -85,7 +85,7 @@ export function ContactSection() {
       ),
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/glennrodrigues17/",
-      description: "Professional network"
+      description: "Connect on LinkedIn"
     }
   ];
 
@@ -106,7 +106,7 @@ export function ContactSection() {
     { icon: Sparkles, text: "Available for freelance projects" },
     { icon: Globe, text: "Remote work worldwide" },
     { icon: Clock, text: "Response within 24 hours" },
-    { icon: MapPin, text: "Focus: React, Next.js, AI" },
+    { icon: MapPin, text: "Currently focused on: React, Next.js, and AI interfaces" },
   ];
 
   return (
@@ -130,7 +130,7 @@ export function ContactSection() {
           >
             <MessageSquare className="w-4 h-4 text-cyan-400" />
             <span className="text-sm text-cyan-400 font-medium">
-              Get In Touch
+              Reach out
             </span>
           </motion.div>
           <motion.h2
@@ -144,7 +144,7 @@ export function ContactSection() {
             variants={headerItem}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Got a project in mind or just want to say hi? Either way, I&apos;d love to hear from you.
+            Have a project, a question, or just want to connect? Drop me a message and I&apos;ll get back to you within a day.
           </motion.p>
         </motion.div>
 
@@ -247,7 +247,7 @@ export function ContactSection() {
                     className="flex items-center gap-2 text-sm text-green-400 bg-green-500/10 px-4 py-3 rounded-lg"
                   >
                     <CheckCircle className="w-4 h-4" />
-                    Message sent! I&apos;ll get back to you soon.
+                    Thanks! I&apos;ll respond within 24 hours.
                   </motion.div>
                 )}
               </form>
