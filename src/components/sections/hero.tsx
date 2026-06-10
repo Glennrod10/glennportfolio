@@ -97,7 +97,7 @@ export function Hero() {
       <div className="absolute inset-0 hero-gradient" />
 
       {/* Gradient orbs */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <motion.div
           className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
           animate={{ x: [0, 50, 0], y: [0, -30, 0] }}
@@ -111,13 +111,13 @@ export function Hero() {
       </div>
 
       {/* Grid overlay */}
-      <div className="absolute inset-0 opacity-[0.04]">
+      <div className="absolute inset-0 opacity-[0.04]" aria-hidden="true">
         <div className="absolute inset-0 bg-grid-white/[0.08] bg-[length:24px_24px]" />
       </div>
 
       {/* Particles (client-only to avoid hydration mismatch) */}
       {mounted && (
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           {particles.map((p) => (
             <motion.div
               key={p.id}
@@ -145,7 +145,7 @@ export function Hero() {
       )}
 
       {/* Moving tech icons */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         {techIcons.map(({ Icon, color, left, top }, i) => (
           <motion.div
             key={i}
@@ -168,12 +168,12 @@ export function Hero() {
       </div>
 
       {/* Bottom fade for seamless transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent pointer-events-none z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent pointer-events-none z-10" aria-hidden="true" />
 
       {/* Navbar */}
-      <nav className="fixed top-0 inset-x-0 z-50" aria-label="Main navigation">
+      <nav className="fixed top-4 inset-x-0 z-50" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 mt-4 px-6 rounded-2xl bg-background/60 backdrop-blur-xl border border-overlay/10">
+          <div className="flex items-center justify-between h-16 px-6 rounded-2xl bg-background/60 backdrop-blur-xl border border-overlay/10">
             <button onClick={() => scrollTo("hero-section")} className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-overlay/10 backdrop-blur-xl shadow-lg shadow-overlay/5 flex items-center justify-center">
                 <span className="text-sm font-bold gradient-text">GR</span>
@@ -247,7 +247,7 @@ export function Hero() {
           >
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-6"
             >
               <Sparkles className="w-4 h-4 text-cyan-400" />
               <span className="text-sm text-cyan-400 font-medium">
@@ -358,6 +358,7 @@ export function Hero() {
       {/* Scroll Indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        aria-hidden="true"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
       >

@@ -61,7 +61,7 @@ export function TechStackSection() {
 
   return (
     <section id="tech-stack-section" className="py-10 md:py-20 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-40 left-20 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-40 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl" />
       </div>

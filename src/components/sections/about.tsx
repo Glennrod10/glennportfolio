@@ -34,7 +34,7 @@ export function AboutSection() {
   return (
     <section id="about-section" className="py-10 md:py-20 relative overflow-hidden">
       {/* Background gradient orbs */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-0 -left-20 md:-left-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 -right-20 md:-right-40 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl" />
       </div>

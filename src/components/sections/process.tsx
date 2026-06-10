@@ -39,14 +39,14 @@ const processSteps = [
 export function ProcessSection() {
   return (
     <section id="process-section" className="py-10 md:py-20 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-40 left-20 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-40 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -65,7 +65,7 @@ export function ProcessSection() {
         </motion.div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute left-[23px] top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-cyan-400" />
+          <div className="hidden lg:block absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-cyan-400" />
 
           <div className="space-y-12">
             {processSteps.map((step, index) => (

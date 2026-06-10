@@ -111,14 +111,14 @@ export function ContactSection() {
 
   return (
     <section id="contact-section" className="py-10 md:py-20 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-40 left-20 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-40 right-20 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-14"
           variants={headerVariants}
           initial="hidden"
           whileInView="visible"
@@ -274,6 +274,7 @@ export function ContactSection() {
                     href={link.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={link.name}
                     className="group flex items-center gap-4 p-4 rounded-xl glass-effect hover:border-cyan-400/30 transition-colors duration-300"
                     whileHover={{ x: 6, scale: 1.02 }}
                     initial={{ opacity: 0, x: -10 }}

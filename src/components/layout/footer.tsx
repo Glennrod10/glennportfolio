@@ -46,6 +46,7 @@ export function Footer() {
               href="https://github.com/Glennrod10"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
               className="p-2.5 rounded-lg bg-overlay/5 border border-overlay/10 hover:border-cyan-400/30 hover:bg-overlay/10 transition-all duration-300 text-muted-foreground hover:text-cyan-400"
             >
               <GitHubIcon />
@@ -54,14 +55,14 @@ export function Footer() {
               href="https://www.linkedin.com/in/glennrodrigues17/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="p-2.5 rounded-lg bg-overlay/5 border border-overlay/10 hover:border-cyan-400/30 hover:bg-overlay/10 transition-all duration-300 text-muted-foreground hover:text-cyan-400"
             >
               <LinkedInIcon />
             </a>
             <a
               href="mailto:glenn.dev17@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              aria-label="Send email"
               className="p-2.5 rounded-lg bg-overlay/5 border border-overlay/10 hover:border-cyan-400/30 hover:bg-overlay/10 transition-all duration-300 text-muted-foreground hover:text-cyan-400"
             >
               <Mail className="w-5 h-5" />
