@@ -58,6 +58,7 @@ function TodoApp() {
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => e.key === "Enter" && addTodo()}
           placeholder="new task..."
+          aria-label="New todo task"
           className="flex-1 bg-transparent border-b border-white/10 text-white text-sm placeholder:text-white/15 outline-none focus:border-cyan-400/50 transition-colors font-mono"
         />
       </div>
@@ -111,10 +112,12 @@ function MiniGame() {
             type="number"
             min="1"
             max="50"
+            aria-label="Your guess"
             className="w-16 bg-transparent border-b border-white/20 text-white text-sm placeholder:text-white/15 outline-none focus:border-cyan-400 transition-colors text-center font-mono"
           />
           <button
             onClick={handleGuess}
+            aria-label="Submit guess"
             className="text-white/40 hover:text-white/80 transition-colors text-xs font-mono"
           >
             ↵
@@ -187,6 +190,7 @@ function StoryGame() {
               onChange={e => setPrompt(e.target.value)}
               onKeyDown={e => e.key === "Enter" && startStory()}
               placeholder="enchanted forest, cyberpunk city..."
+              aria-label="Story theme prompt"
               className="flex-1 bg-transparent border-b border-white/10 text-white text-sm placeholder:text-white/15 outline-none focus:border-cyan-400/50 transition-colors font-mono"
             />
           </div>
@@ -384,6 +388,7 @@ function Magic8Ball() {
               onChange={e => setQuestion(e.target.value)}
               onKeyDown={e => e.key === "Enter" && ask()}
               placeholder="will I be productive today?"
+              aria-label="Ask a question"
               className="flex-1 bg-transparent border-b border-white/10 text-white text-sm placeholder:text-white/15 outline-none focus:border-cyan-400/50 transition-colors font-mono"
             />
           </div>

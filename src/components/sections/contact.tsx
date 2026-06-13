@@ -172,12 +172,13 @@ export function ContactSection() {
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="text-sm text-cyan-400 mb-2 block font-mono">
+                  <label htmlFor="name" className="text-sm text-cyan-400 mb-2 block font-mono">
                     {">"} name
                   </label>
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     value={formData.name}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 bg-background/50 border rounded-lg focus:outline-none transition-all duration-300 focus:bg-background/80 ${
@@ -191,12 +192,13 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="text-sm text-cyan-400 mb-2 block font-mono">
+                  <label htmlFor="email" className="text-sm text-cyan-400 mb-2 block font-mono">
                     {">"} email
                   </label>
                   <input
                     type="email"
                     name="email"
+                    id="email"
                     value={formData.email}
                     onChange={handleChange}
                     className={`w-full px-4 py-3 bg-background/50 border rounded-lg focus:outline-none transition-all duration-300 focus:bg-background/80 ${
@@ -210,11 +212,12 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="text-sm text-cyan-400 mb-2 block font-mono">
+                  <label htmlFor="message" className="text-sm text-cyan-400 mb-2 block font-mono">
                     {">"} message
                   </label>
                   <textarea
                     name="message"
+                    id="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}

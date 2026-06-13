@@ -174,7 +174,7 @@ export function Hero() {
       <nav className="fixed top-4 inset-x-0 z-50" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 px-6 rounded-2xl bg-background/60 backdrop-blur-xl border border-overlay/10">
-            <button onClick={() => scrollTo("hero-section")} className="flex items-center gap-3">
+            <button onClick={() => scrollTo("hero-section")} aria-label="Scroll to top" className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-overlay/10 backdrop-blur-xl shadow-lg shadow-overlay/5 flex items-center justify-center">
                 <span className="text-sm font-bold gradient-text">GR</span>
               </div>
@@ -206,6 +206,7 @@ export function Hero() {
               <ThemeToggle />
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label={mobileOpen ? "Close menu" : "Open menu"}
                 className="md:hidden p-2 text-muted-foreground hover:text-foreground"
               >
                 {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -340,6 +341,7 @@ export function Hero() {
                   height={320}
                   alt="Glenn Rodrigues"
                   priority
+                  sizes="(max-width: 768px) 320px, 640px"
                   className="w-full h-full object-cover"
                 />
                
