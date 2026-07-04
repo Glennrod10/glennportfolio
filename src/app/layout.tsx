@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://glennrodrigues.com"),
+  metadataBase: new URL("https://glennrodrigues.vercel.app"),
   title: "Glenn Rodrigues - Frontend Engineer",
   description: "Frontend engineer specializing in React, Next.js, and TypeScript. I build SaaS platforms, AI interfaces, and web products that actually perform. Based in Mumbai, working remotely with clients worldwide.",
   keywords: ["frontend", "react", "nextjs", "typescript", "ai", "saas", "web development"],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   creator: "Glenn Rodrigues",
   robots: { index: true, follow: true },
   alternates: {
-    canonical: "https://glennrodrigues.com",
+    canonical: "https://glennrodrigues.vercel.app",
   },
   icons: {
     icon: "/favicon.svg",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Glenn Rodrigues Portfolio",
-    url: "https://glennrodrigues.com",
+    url: "https://glennrodrigues.vercel.app",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
@@ -59,7 +59,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Glenn Rodrigues",
     jobTitle: "Frontend Engineer",
-    url: "https://glennrodrigues.com",
+    url: "https://glennrodrigues.vercel.app",
     sameAs: [
       "https://github.com/Glennrod10",
       "https://www.linkedin.com/in/glennrodrigues17/",
