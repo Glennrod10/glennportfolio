@@ -57,13 +57,25 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Glenn Rodrigues",
-    jobTitle: "Frontend Engineer",
-    url: "https://glennrodrigues.vercel.app",
-    sameAs: [
-      "https://github.com/Glennrod10",
-      "https://www.linkedin.com/in/glennrodrigues17/",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: "Glenn Rodrigues Portfolio",
+        url: "https://glennrodrigues.vercel.app",
+        description:
+          "Frontend engineer specializing in React, Next.js, and TypeScript.",
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "Person",
+        name: "Glenn Rodrigues",
+        jobTitle: "Frontend Engineer",
+        url: "https://glennrodrigues.vercel.app",
+        sameAs: [
+          "https://github.com/Glennrod10",
+          "https://www.linkedin.com/in/glennrodrigues17/",
+        ],
+      },
     ],
   };
 
